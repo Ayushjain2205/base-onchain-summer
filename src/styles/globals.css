@@ -6,3 +6,9 @@ html,
 body {
   font-family: "Zilla Slab", serif;
 }
+
+@layer base {
+  html {
+    @apply text-white;
+  }
+}
