@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Page from "../components/Layout/Page";
+import Trading from "../components/UI/Trading";
 
 const TabIcon = ({ active, onClick, children }) => (
   <div
@@ -65,7 +66,11 @@ const Creator = () => {
           />
         </svg>
       ),
-      content: <div>Chart Content</div>,
+      content: (
+        <div>
+          <Trading />
+        </div>
+      ),
     },
   ];
 
